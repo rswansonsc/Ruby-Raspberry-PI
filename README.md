@@ -30,7 +30,7 @@ Update Raspberry-PI Firmware:
 Log into the board via SSH or on a local keyboard and run the following commands:
 
 sudo apt-get update 
-#this next line command take awhile to run
+_this next line command take awhile to run_
 sudo apt-get upgrade 
 
 sudo apt-get install git-core
