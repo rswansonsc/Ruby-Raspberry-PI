@@ -36,6 +36,7 @@ sudo apt-get upgrade
 sudo apt-get install git-core
 sudo wget http://goo.gl/1BOfJ -O /usr/bin/rpi-update
 sudo chmod +x /usr/bin/rpi-update
+cd /usr/bin (change to the /usr/bin directory)
 sudo rpi-update
 
 After you complete the last update command, reboot your Pi and then run this command to view memory usage:
