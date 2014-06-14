@@ -38,7 +38,39 @@ sudo wget http://goo.gl/1BOfJ -O /usr/bin/rpi-update
 sudo chmod +x /usr/bin/rpi-update
 cd /usr/bin (change to the /usr/bin directory)
 sudo rpi-update
-
+******************
+You should see the following:
+pi@ruby-pi-chas1 /usr/bin $ sudo rpi-update
+ *** Raspberry Pi firmware updater by Hexxeh, enhanced by AndrewS and Dom
+ *** Performing self-update
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100   135  100   135    0     0    430      0 --:--:-- --:--:-- --:--:--   579
+100  7026  100  7026    0     0  13054      0 --:--:-- --:--:-- --:--:-- 13054
+ *** Relaunching after update
+ *** Raspberry Pi firmware updater by Hexxeh, enhanced by AndrewS and Dom
+ *** We're running for the first time
+ *** Backing up files (this will take a few minutes)
+ *** Backing up firmware
+ *** Backing up modules 3.12.20+
+ *** Downloading specific firmware revision (this will take a few minutes)
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100   168  100   168    0     0    608      0 --:--:-- --:--:-- --:--:--   848
+100 21.1M  100 21.1M    0     0   682k      0  0:00:31  0:00:31 --:--:-- 1341k
+ *** Updating firmware
+ *** Updating kernel modules
+ *** depmod 3.12.21+
+ *** Updating VideoCore libraries
+ *** Using HardFP libraries
+ *** Updating SDK
+ *** Running ldconfig
+ *** Storing current firmware revision
+ *** Deleting downloaded files
+ *** Syncing changes to disk
+ *** If no errors appeared, your firmware was successfully updated to 05ae751d5b4f6be8fdd1882063540b56a0933abb
+ *** A reboot is needed to activate the new firmware
+ 
 After you complete the last update command, reboot your Pi and then run this command to view memory usage:
 
 free -h
