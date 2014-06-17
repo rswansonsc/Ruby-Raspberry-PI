@@ -1,5 +1,6 @@
 #!/bin/bash
-echo "My name is $1 and I come from $2"
+echo "My name is Hal"
+#echo "My name is $1 and I come from $2"
 
 #Ruby-PI setup for RaspberryPI running Debian
 #Scripts written by Roger Swanson (@roger_swanson), Charleston, SC
