@@ -1,10 +1,45 @@
 #!/bin/bash
-echo "My name is Hal"
+#
+#Notes you should have a look at before running this script. Thanks Roger ;-)
+#
+#1. In order to run a script you must have the line above entered as the first
+#   line in the exact format
+#
+#2. You will need to give permission to your system in order to run this
+#   program, at command line "chmod +x ruby-pi"
+
+#echo "My name is Hal" 
 #echo "My name is $1 and I come from $2"
 
 #Ruby-PI setup for RaspberryPI running Debian
 #Scripts written by Roger Swanson (@roger_swanson), Charleston, SC
-#OpenLicense
-#You will need to give permission to your system in order to run this
-#program, at command line "chmod +x ruby-pi"
+#OpenLicense Message goes here! :-)
+#
+#sudo apt-get install -y git curl zlib1g-dev subversion
+#sudo apt-get update
+#sudo apt-get install -y openssl libreadline6-dev git-core zlib1g libssl-dev
+#sudo apt-get install -y libyaml-dev libsqlite3-dev sqlite3
+#sudo apt-get install -y libxml2-dev libxslt-dev
+#sudo apt-get install -y autoconf automake libtool bison
+#curl -L get.rvm.io | bash -s stable --rails
+#source ~/.rvm/scripts/rvm
+ruby -v
+rails -v
+#gem install execjs
+#sudo apt-get install nodejs
+
+#These are the commands to run a simple RubyOnRails Test
+#I have created another script "ror-test-school"
+#remember to run this script you must make it executable 
+#chmod +x ror-test-school
+#
+#go into a new directory enter command "mkdir projects"
+#build it yourself or clone the simple project I made up on git hub
+#rails new school
+#cd school
+#rails g scaffold Pupil name:string teacher:string class:string
+#rake db:migrate
+#rails server
+
+
 

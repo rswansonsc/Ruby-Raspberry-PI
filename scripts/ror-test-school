@@ -1,0 +1,22 @@
+#!/bin/bash
+#
+#Notes you should have a look at before running this script. Thanks Roger ;-)
+#
+#1. In order to run a script you must have the line above entered as the first
+#   line in the exact format
+#
+#2. You will need to give permission to your system in order to run this
+#   program, at command line "chmod +x ror-test-school"
+
+#echo "My name is Hal" 
+#echo "My name is $1 and I come from $2"
+mkdir projects
+rails new school
+cd school
+rails g scaffold Pupil name:string form:string
+rake db:migrate
+#rails command that follows points to specific ip address
+#to get your ip address enter "ifconfig" or you can use "hostname"
+#next line will start your rails server with ip specific 
+rails server -b 192.168.100.118
+#go to browser http://192.168.100.118:3000/pupils (see your basic CRUD)
