@@ -7,7 +7,10 @@
 #
 #2. You will need to give permission to your system in order to run this
 #   program, at command line "chmod +x ror-test-school"
-
+#
+#3. If the script is in your current directory, but the current directory “.” is not in #   your search path, you’ll need to pre- pend “./” so the shell finds the script:
+#   $ ./ruby-pi
+#
 #echo "My name is Hal" 
 #echo "My name is $1 and I come from $2"
 mkdir projects
