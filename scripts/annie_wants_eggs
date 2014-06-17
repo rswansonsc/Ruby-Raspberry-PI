@@ -16,8 +16,8 @@
 #echo "My name is Hal" 
 #echo "My name is $1 and I come from $2"
 #mkdir projects
-rails new annie_wants_eggs
-cd annie_wants_eggs
+rails new eggs
+cd eggs
 rails g scaffold eggs name_f:string name_l:string email:string phone:string egg_type:string quantity:string
 rake db:migrate
 #rails command that follows points to specific ip address
