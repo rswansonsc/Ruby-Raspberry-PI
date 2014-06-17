@@ -28,6 +28,7 @@ https://github.com/raspberrypi/noobs/releases
 5. Insert the SD card into your Pi and connect the power supply.
 
 Your Pi will now boot into NOOBS and should display a list of operating systems that you can choose to install.
+*****
 If your display remains blank, you should select the correct output mode for your display by pressing one of the following number keys on your keyboard:
 1. HDMI mode - this is the default display mode.
 2. HDMI safe mode - select this mode if you are using the HDMI connector and cannot see anything on screen when the Pi has booted.
@@ -35,3 +36,22 @@ If your display remains blank, you should select the correct output mode for you
 4. Composite NTSC mode
 
 If you are still having difficulties after following these instructions, then please visit the Raspberry Pi Forum ( http://www.raspberrypi.org/phpBB3/ ) for support.
+*****
+
+When the Raspberry PI reboots you will be placed into a Raspberry PI Software Configuration Tool (raspi-config)
+-do not Overclock this will void warranty and cause system to run hot and possible fail
+
+Here is what I recommend you do:
+1. first run the update tool option, (advanced options, A7)
+2. expand file system, this may have already run, (main screen option, 1.)
+3. advance options, give the system more RAM to run 256m is max that i found (advanced options, A3), default is 64m.
+4. connect to ethernet and get on line, test connection 'ping www.goole.com'
+5. give your raspberry pi a unique hostname (advanced options, A2)
+6. user to login is always 'pi', default password is 'raspberry', change it.
+7. change your password (write it down)(advanced options, A2), default is raspberry
+8. enable SSH to remote into system using simple ssh pi@ip_address_goes_here
+8a. show your ip "ifconfig"
+8b. ssh pi@your_ip_address, so pi is the user, system will ask you for that password
+9. run 'ruby-pi to get setup for RubyOnRails'
+10. run 'ror-test-school', be sure to check the directions before you run command
+11. open browser localhost:3000 (localhost is your ip address, use 'ifconfig' to get ip address)
