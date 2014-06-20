@@ -12,17 +12,14 @@
 #$ ./ruby-pi
 
 echo "My name is Hal" 
-#echo "My name is still Hal" 
+pause
+echo "My name is still Hal" 
 #echo "My name is $1 and I come from $2"
-
-echo "What would you like to do? (options: 'quit, or any other key to continue' " 
-	read answer
+echo "Would you like to continue? Please enter 'yes' to go on with the test script" read answer
 case "$answer" in
-quit)
-echo "Good night then" 
-break
-;;
+yes)
+echo "OK, here we go" ;;
 *)
-echo "I'm not sure what you want to do" echo "I guess you can try again tomorrow"
+echo "I'm not sure what you want to do" echo "I guess I'll see you tomorrow"
 ;;
 esac

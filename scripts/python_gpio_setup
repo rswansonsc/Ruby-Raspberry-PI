@@ -1,0 +1,29 @@
+#!/bin/bash
+#
+#Notes you should have a look at before running this script. Thanks Roger ;-)
+#
+#1. In order to run a script you must have the line above entered as the first
+#   line in the exact format
+#
+#2. You will need to give permission to your system in order to run this
+#   program, at command line "chmod +x ruby-pi"
+#
+#3. If the script is in your current directory, but the current directory “.” is not in your search path, you’ll need to pre- pend “./” so the shell finds the script:
+
+echo "My name is Hal, starting Python GPIO setup load process"
+echo "Thanks for using my script - Roger Swanson, Charleston, SC USA, http://rogerswanson.me" 
+#echo "My name is $1 and I come from $2"
+
+#Ruby-PI setup for RaspberryPI running Debian
+#Scripts written by Roger Swanson (@roger_swanson), Charleston, SC
+#OpenLicense Message goes here! :-)
+#
+#sudo apt-get install python-dev
+
+sudo easy_install -U distribute
+sudo apt-get install python-pip
+sudo pip install rpi.gpio
+wget -O geekman-python-eeml.tar.gz https://github.com/geekman/python-eeml/tarball/master
+tar zxvf geekman-python-eeml.tar.gz
+#cd geekman-python-eeml*
+#sudo python setup.py install

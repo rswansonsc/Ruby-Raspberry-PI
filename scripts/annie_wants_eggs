@@ -18,7 +18,7 @@
 #mkdir projects
 rails new eggs
 cd eggs
-rails g scaffold eggs name_f:string name_l:string email:string phone:string egg_type:string quantity:string
+rails g scaffold order first_name:string last_name:string address:string city:string state:string zip:string email:string phone:string egg_type:string quantity:string
 rake db:migrate
 #rails command that follows points to specific ip address
 #
